@@ -1,0 +1,58 @@
+:local{
+  .checkProject{
+    :global{
+      .am-tabs{background-color: #fff;}
+      .am-tabs-default-bar-content{
+        width: 80px;
+        .am-tabs-default-bar-tab{
+          color: #333333;
+          background-color: #efefef;
+        }
+        .am-tabs-default-bar-tab.am-tabs-default-bar-tab-active{
+          font-size: 16px;
+          background-color: #fff;
+          color: #333333;
+        }
+      }
+      .am-tabs-default-bar-underline{display: none;}
+      .am-tabs-content-wrap{
+        .am-list{
+          .am-list-body div:not(:last-child) .am-list-line::after{
+            transform: scaleY(0);
+            -webkit-transform: scaleY(0); 
+          }
+          .am-list-content{font-size: 16px;}
+          .am-list-item.am-checkbox-item{
+            border-bottom: 1px solid #c9c9c9;
+            .am-checkbox-inner{
+              top: 50%;
+            }
+            .am-list-brief{
+              font-size: 14px;
+              color: #2bab9a;
+            }
+          }
+          .am-list-extra{flex-basis: 54%;text-align: left;}
+        }
+        
+      }
+      .total{
+        padding-bottom: 10px;
+        background-color: #fff;
+        p{
+          padding: 10px 15px 0;
+          color: #333333;
+          span{
+            float: right;
+            color: #eb5050;
+          }
+        }
+        .am-button{
+          margin: 10px 10px 0;
+          color: #fff;
+          background-color: #2bab9a;
+        }
+      }
+    }
+  }
+}

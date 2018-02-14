@@ -1,0 +1,69 @@
+@charset 'utf-8';
+@import './reset';
+@import './iconFont';
+
+:global {
+    html,
+    body {
+        width: 100%;
+        height: 100%;
+        background: #fff;
+        font-family:Helvetica;
+        font-size: 12px;
+    }
+    #root {
+        width: 100%;
+        // height: 100%;
+        // background: #fff;
+    }
+    .page {
+        height: 100%;
+        background: rgba(245, 245, 249, 1);
+        .part {
+            position: relative;
+            padding: 20px 15px;
+            margin-bottom: 10px;
+            background: #fff;
+        }
+        .singleBtn {
+            margin: 40px 10px 20px 10px;
+        }
+    }
+    /* 重置antd-mobile样式 */
+    .am-button-small {
+        font-size: 12px;
+    }
+    .am-popover .am-popover-item-icon {
+        margin-right: 2px;
+        width: auto;
+        height: auto;
+    }
+    .am-popover .am-popover-item-container .am-popover-item-content{
+      display: block;
+      margin: auto;
+    }
+    .am-modal-title{
+      .am-icon.am-icon-md{
+          width: 150px;
+          height: 150px;
+        }
+    }
+    .slider-decorator-0 .am-carousel-wrap-dot > span{ background-color: #808080;}
+    .slider-decorator-0 .am-carousel-wrap-dot-active > span{ background-color: #0ea991;}
+    .am-list .am-list-item.am-list-item-active{background-color: #fff;}
+    .am-list .am-list-item .am-list-line .am-list-content，
+    .am-list .am-list-item .am-list-line .am-input-label.am-input-label-5{
+        font-size: 16px;
+    }
+    .am-picker-popup-content .am-picker-popup-item,
+    .am-modal-footer .am-modal-button-group-h .am-modal-button,
+    .am-modal-footer .am-modal-button-group-v .am-modal-button{
+       color: #3399ff;
+    }
+    .am-search .am-search-cancel{
+      color: #57adec;
+    }
+    .am-modal.addAssistant .am-modal-header{
+        padding: 15px;
+    }
+}

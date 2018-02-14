@@ -1,0 +1,28 @@
+
+:local{
+  .set{
+    :global{
+      .my-list{
+        padding: 10px 0;
+        .am-list-body div:not(:last-child) .am-list-line::after,
+        .am-list-body::before,
+        .am-list-body::after{
+          transform: scaleY(1);
+          -webkit-transform: scaleY(1);
+        }
+        .am-list-item-active{background-color: #fff;}
+        img{
+          margin-right: 5px;
+          height: 25px;
+        }
+      }
+      .am-button.quit{
+         margin-top: 40px;
+         border-radius: 0;
+         &::before{
+           border-radius: 0;
+         }
+      }
+    }
+  }
+}

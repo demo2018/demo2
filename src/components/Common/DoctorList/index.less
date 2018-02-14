@@ -1,0 +1,61 @@
+:local {
+  .doctorsPage {
+     :global {
+      .bannerWrapper {
+        display: block;
+        width: 100%;
+        height: 190px;
+        line-height: 0;
+        overflow: hidden;
+      }
+      .bannerImg {
+        width: 100%;
+      }
+      .am-list-item {
+        padding-left: 15px;
+        border-bottom: 1px solid #e6e6e6;
+      }
+      .am-list .am-list-body .am-list-item .am-list-line:after{
+        transform: scaleY(0);
+        -webkit-transform: scaleY(0);
+      }
+      .doctorContent {
+        display: flex;
+        align-items: center;
+        font-size: 16px;
+        img {
+          width: 75px;
+          height: 75px;
+          margin-right: 20px;
+        }
+        .tagItem {
+          display: inline-block;
+          padding: 1px 6px;
+          margin-left: 4px;
+          color: #00AA90;
+          font-size: 13px;
+          border: 1px solid #00AA90;
+          border-radius: 3px;
+        }
+        .am-list-brief {
+          font-size: 12px;
+        }
+      }
+      .doctorSelect{
+        ul{
+          border: none;
+        }
+        ul li{ 
+          float: left;
+          width: 33.33%;
+          .am-navbar-title,
+          .am-navbar-right{
+            display: none;
+          }
+          .am-navbar-left{
+          text-align: center;}
+        }
+      }
+    }
+  }
+}

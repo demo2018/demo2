@@ -1,0 +1,52 @@
+:local{
+  .turnCenter{
+    :global{
+      .head{
+        padding: 15px;
+        color: #999;
+        background-color: #fff;
+        border-bottom: 1px solid #c9c9c9;
+        .money{
+          margin-top: 5px;
+          color: #2bab9a;
+          font-size: 30px;
+        }
+      }
+      .am-tabs{
+        margin-top: 10px;
+        border-top: 1px solid #c9c9c9;
+        .dropDownTrigger{
+          border: none;
+        }
+        .am-list-item.am-list-item-middle {
+          border-bottom: 1px solid #c9c9c9;
+          .am-list-thumb{
+            img{
+              width: 50px;
+              height: 50px;
+            }
+          }
+          .am-list-brief{
+            span{
+              margin-right: 8px;
+            }
+          }
+          .am-list-extra{
+            .finalIn{
+              color: #2bab9a;
+            }
+          }
+        }
+        .am-tabs-default-bar-tab:nth-child(2) .dropDownTrigger svg{display: none;}
+        .am-tabs-default-bar-top .am-tabs-default-bar-tab::after{
+          transform: scaleY(1);
+          -webkit-transform: scaleY(1);
+        }
+        .am-list-body::before{
+           transform: scaleY(0);
+          -webkit-transform: scaleY(0);
+        }
+      }
+    }
+  }
+}

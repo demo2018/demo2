@@ -1,0 +1,92 @@
+@c:#0ea991;
+
+
+:local {
+  .userInfo{
+    padding: 10px 0;
+    :global{
+      .my-list{ 
+        .am-list-body {
+          position: relative;
+          &::before{
+            transform: scaleY(1);
+            -webkit-transform: scaleY(1);
+          }
+          .my-listhead::before{
+              display: block;
+              content: '';
+              position: absolute;
+              top: 10px;
+              left: 15px;
+              width: 5px;
+              height: 23px;
+              background-color: @c;
+            }
+          .am-list-item{
+            padding-left: 28px;
+            border-bottom: 1px solid #dadada;
+            font-size: 16px;
+            .am-list-line:after{
+              background-color: transparent;
+              transform: scaleY(0);
+              -webkit-transform:scaleY(0);
+            } 
+            .am-list-line .am-list-content{
+              font-size: 16px;
+            }
+            .am-input-control{
+              margin-right: 23px;
+              text-align: right;
+              font-size: 16px;
+              input{
+                text-align: right;
+                color: #888;
+                font-size: 16px;
+                &::-webkit-input-placeholder{
+                  color: #888;
+                }
+                 &::-moz-placeholder{
+                  color: #888;
+                }
+                 &::-webkit-input-placeholder{
+                  color: #888;
+                }
+                 &::-ms-input-placeholder{
+                  color: #888;
+                }
+              }
+            }
+            .am-input-error-extra{
+              display: none;
+            }
+          }
+          .am-list-item.headImg{
+            .am-list-line img{
+              width: 50px;
+              height: 50px;
+              border-radius: 50%;
+            }
+          }
+        }
+      }
+      .my-listhead{
+        .am-button{
+          float: right;
+          padding: 2px 5px;
+          font-size: 14px;
+          color: @c;
+          border: 1px solid @c;
+          height: inherit;
+          line-height: inherit;
+          &::before{
+            border: none;
+          }
+        }
+      }
+    }
+  }
+  
+}
+.am-action-sheet-wrap  .am-action-sheet-button-list{
+    color: #808080!important;
+  }

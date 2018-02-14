@@ -1,0 +1,195 @@
+@c:#0ea991;
+@border:1px solid #e6e6e6;
+
+:local{
+  .myBillDetail{
+    :global{
+      .myBillDetHeadContent{
+        .card-header{
+          padding: 15px 15px 9px;
+          font-size: 14px;
+          color: #808080;
+        }
+        .am-card.am-card-full{
+          min-height: auto;
+          &::after{
+            transform:scaleY(1);
+            -webkit-transform:scaleY(1);
+            background-color: #e6e6e6;
+          }
+          .am-card-header{
+            padding:15px 0 0;
+            margin: 0 15px;
+            font-size:16px;
+            .am-card-header-content{
+            color:#2f2f2f;
+            }
+            .am-card-header-extra{
+              font-size:14px;
+              color:#ff3d42;
+            }
+            .am-card-header-extra .paid{
+              color:@c;
+            }
+          }
+          .am-card-body{
+            padding: 0 15px;
+            &::before{
+              height: 0PX;
+              background-color: transparent;
+            }
+            ul li{
+              margin: 15px 0;
+              color: #2f2f2f;
+              font-size: 15px;
+              span{
+                margin: 0 3px 0 5px;
+              }
+              em{
+                float: left;
+              }
+              .clinic-address{
+                display: block;
+                padding-left: 76px;
+              }
+            }
+          }
+        }
+      }
+      .myBillDetContent{
+        .bill-det {
+          background-color: #fff;
+          p.bill-dethead{ 
+            padding: 15px 15px 10px; 
+            font-size: 16px; 
+            color: #2f2f2f;
+          }
+          .tableWrapper{
+            padding: 0 15px;
+            border-bottom: @border;
+          }
+          table{ 
+            width: 100%; 
+            font-size: 15px;
+            thead{border-bottom: @border;}
+            tr td:first-child,
+            tr th:first-child{ text-align: left;}
+            tr td:last-child,
+            tr th:last-child{ text-align: right;}
+            thead th,tbody td{
+              padding: 10px 0; width: 33.33%; text-align: center;
+            }
+            th{
+              color: #808080;
+              font-weight: 100;
+            }
+            td p{
+              margin-top: 8px; 
+              color: #2f2f2f; 
+              font-size: 12px;
+              .pro-discount-det{ color: #00aa90;}
+            }
+            .combined-discount-price{ color: #00aa90;}
+            .original-price{ text-decoration: line-through; color: #808080;}
+            tfoot{
+              border-top: @border;
+              td{
+                padding: 10px 0;
+              }
+              .combined-price{font-size: 16px;}
+            } 
+          }
+        }
+      }
+      .pay{
+        .am-list .am-list-body{
+          border-bottom: @border;
+          &::after,
+          &::before,
+          .am-list-line:after{
+            height: 0PX;
+            transform:scaleY(0);
+            -webkit-transform:scaleY(0);
+            background-color: transparent;
+          }
+          .am-list-line{
+            .am-list-content{
+              img{
+                margin-right: 10px;
+                vertical-align: -5px;
+              }
+            }
+            .am-list-extra .am-radio-inner{
+              width:16px;
+              height:16px;
+              border:1px solid @c;
+              border-radius:50%;
+              &:after{
+                top:2px;
+                right:2px;
+                width:10px;
+                height:10px;
+                border-width:0;
+                border-radius:50%;
+                background-color:@c;
+              }
+            }
+          }
+        }
+        .am-button{
+          margin: 30px 15px;
+          background-color: @c;
+          color: #fff;
+          span{
+            font-size: 16px;
+          }
+        }
+      }
+      .evaluation{
+        padding: 15px;
+        margin: 15px 0;
+        margin-bottom: 20px;
+        font-size: 16px;
+        border-top: 1px solid #ccc;
+        border-bottom: 1px solid #ccc;
+        background-color: #fff;
+        .evaluation-head{
+          position: relative;
+          margin-bottom: 10px; 
+          text-align: right;
+          &::before{
+            position: absolute;
+            display: inline-block;
+            content: '';
+            width: 5px;
+            height: 17px;
+            background-color: @c;
+            left: -10px;
+            top: 0;
+          }
+          .evaluation-left{
+            float: left;
+          }
+          .evaluation-date,.evaluation-time{ font-size: 12px; color: #808080;}
+          .evaluation-date{
+            margin: 0 10px;
+          }
+        }
+        .evaluation-tag{
+          padding: 15px 0;
+          background-color: #fff;
+          .am-tag{
+            margin: 5px 5px 5px 0;
+          }
+          .am-tag-normal::before{
+            border-color: #808080;
+          }
+          .am-tag-normal::before,
+          .am-tag-active::before{
+            border-radius: 50px;
+          }
+        }
+      }
+    }
+  }
+}

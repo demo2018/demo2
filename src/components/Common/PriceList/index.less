@@ -1,0 +1,48 @@
+@c:#00aa90;
+
+:local{
+  .priceList{
+    :global{
+      .am-tabs{
+        border-top: 1px solid #e6e6e6;
+        border-bottom: 1px solid #e6e6e6;
+        .am-tabs-default-bar-tab-active,
+        .am-tabs-default-bar-underline{
+          color: @c;
+          border-color: @c;
+        }
+        .am-list{
+          .am-list-item .am-list-line{
+            border-bottom: 1px solid #e6e6e6;
+          }
+          .am-list-item:last-child .am-list-line{
+            border-bottom: none;
+          }
+          .priceContent{
+            display: flex;
+            font-size: 16px;
+            align-items: center;
+            img {
+              width: 60px;
+              height: 60px;
+              margin-right: 15px;
+            }
+            .am-list-brief{
+              color: @c;
+            }
+          }
+        }
+          
+      }
+      .consulting{
+        position: fixed;
+        bottom: 40px;
+        right: 20px;
+        img{
+          width: 40px;
+          height: 40px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,106 @@
+@Color:#dadada;
+
+
+:local {
+  .userCenter {
+    padding-bottom: 40px; 
+     :global {
+      .userHead {
+        position: relative;
+        padding-top: 1px;
+        width: 100%;
+        height: 200px;
+        background-size: 100%;
+        border-bottom: 1px solid #dadada;
+        .headInfo{
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%,-50%);
+          width: 30%;
+          max-height: 180px;
+          max-width: 140px;
+          img{
+            margin: -5px;
+            width: 100%;
+            border: 5px solid #fff;
+            border-radius: 50%;
+          }
+          .userName{
+            margin-top: 7px;
+            text-align: center;
+            font-size: 18px;
+          }
+        }
+      }
+      .UserFun{
+        margin-top: 10px;
+        .am-list{
+          .am-list-body::before,
+          .am-list-body::after{
+            transform: scale(1);
+            background-color: @Color;
+          }
+          .am-list-item{
+            justify-content: center;
+            align-items: center;
+            line-height: 56px;
+            border-bottom: 1px solid @Color;
+            .am-list-line .am-list-content{
+              font-size: 16px;
+            }
+            .am-list-line::after{
+              background-color: transparent;
+              height:0PX;
+            }
+            .am-list-content{
+              line-height: 40px;
+            }
+            img{
+              margin-right: 5px;
+              width: 40px;
+              height: 40px;
+            }
+          } 
+        }
+        .acrossList{
+          margin: 10px 0;
+          overflow: hidden;
+          .am-list-item{
+            padding-left: 0;
+            float: left;
+            width: 50%;
+            .am-list-line{
+              border-right: 1px solid @Color;
+              .am-list-content{
+                padding-left: 15px;
+              }
+            }
+          }
+          .am-list-item:nth-child(2n) .am-list-line{
+            border-right: none;
+          }
+          .am-list-item:nth-child(3) .am-list-line{
+            img{
+              margin-left: 3px;
+              margin-right: 7px;
+              width: 35px;
+              height: 30px;
+              vertical-align: -9px;
+            }
+          }
+          .am-list-item:nth-child(4) .am-list-line{
+            img{
+              margin-left: 3px;
+              margin-right: 9px;
+              width: 33px;
+              height: 30px;
+              vertical-align: -9px;
+            }
+          }
+        }
+        
+      }
+    }
+  }
+}

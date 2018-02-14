@@ -1,0 +1,21 @@
+:local{
+  .customerName{
+    padding: 10px 0;
+    :global{
+      .am-list{
+        .am-list-body{
+          &:before,
+          &:after{
+            transform: scaleY(1);
+            -webkit-transform: scaleY(1);
+          }
+        }
+      }
+      p{
+        padding: 10px 15px;
+        font-size: 14px;
+        color: #b2b2b2;
+      }
+    }
+  }
+}
